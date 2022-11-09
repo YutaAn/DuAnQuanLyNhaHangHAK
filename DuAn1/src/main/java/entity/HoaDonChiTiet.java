@@ -31,6 +31,14 @@ public class HoaDonChiTiet implements Serializable{
     private int soLuong;
     
     @Column(name = "DonGia")
-    private BigDecimal donGia;
+    private BigDecimal DonGia;
+    
+    @ManyToOne
+    @JoinColumn(name = "IDDHCT")
+    private DonHangChiTiet idDonHangChiTiet;
+    
+    @ManyToOne
+    @JoinColumn(name = "IDHD")
+    private HoaDon idHoaDon;
     
 }

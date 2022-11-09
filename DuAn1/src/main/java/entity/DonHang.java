@@ -43,11 +43,7 @@ public class DonHang implements Serializable{
     @ManyToOne
     @JoinColumn(name = "IDNV")
     private NhanVien idNhanVien;
-    
-    @ManyToOne
-    @JoinColumn(name = "IDKH")
-    private KhachHang idKhachHang;
-    
+   
     @ManyToOne
     @JoinColumn(name = "IDKM")
     private KhuyenMai idKhuyenMai;

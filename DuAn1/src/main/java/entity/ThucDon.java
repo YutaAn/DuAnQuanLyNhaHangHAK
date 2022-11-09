@@ -1,6 +1,7 @@
 package entity;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -37,6 +38,12 @@ public class ThucDon implements Serializable{
     
     @Column(name = "Hinh")
     private String hinh;
+    
+    @Column(name = "DonGia")
+    private BigDecimal donGia;
+    
+    @Column(name = "GhiChu")
+    private String ghiChu;
     
     @ManyToOne
     @JoinColumn(name = "IDDanhMuc")

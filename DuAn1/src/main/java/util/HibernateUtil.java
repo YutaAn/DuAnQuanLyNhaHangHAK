@@ -4,6 +4,15 @@
  */
 package util;
 
+import entity.Ban;
+import entity.DanhMuc;
+import entity.DonHang;
+import entity.DonHangChiTiet;
+import entity.HoaDon;
+import entity.HoaDonChiTiet;
+import entity.KhuyenMai;
+import entity.NhanVien;
+import entity.ThucDon;
 import java.util.Properties;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
@@ -46,7 +55,7 @@ public class HibernateUtil {
         properties.put(Environment.PASS, "123456");
         properties.put(Environment.SHOW_SQL, "true");
         //gen DB tự động
-//        properties.put(Environment.HBM2DDL_AUTO, "create");
+        properties.put(Environment.HBM2DDL_AUTO, "create");  // sao đâu nhỉ
         return properties;
     }
 
@@ -54,6 +63,16 @@ public class HibernateUtil {
         Configuration conf = new Configuration();
 
         conf.setProperties(prop);
+        conf.addAnnotatedClass(DanhMuc.class);
+        conf.addAnnotatedClass(NhanVien.class);
+        conf.addAnnotatedClass(Ban.class);
+        conf.addAnnotatedClass(KhuyenMai.class);
+        conf.addAnnotatedClass(ThucDon.class);
+        conf.addAnnotatedClass(DonHang.class);
+        conf.addAnnotatedClass(DonHangChiTiet.class);
+        conf.addAnnotatedClass(HoaDon.class);
+        conf.addAnnotatedClass(HoaDonChiTiet.class);
+
         return conf;
     }
 }

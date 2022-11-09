@@ -29,7 +29,7 @@ public class KhuyenMai implements Serializable{
     private String maGiamGia;
     
     @Column(name = "PhanTram")
-    private String phanTram;
+    private int phanTram;
     
     @Column(name = "NgayBatDau")
     private Date ngayBatDau;

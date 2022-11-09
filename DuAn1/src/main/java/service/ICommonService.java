@@ -19,4 +19,5 @@ public interface ICommonService<T> {
     String addOrUpdate(T t);
     
     String delete(T t);
+    
 }
