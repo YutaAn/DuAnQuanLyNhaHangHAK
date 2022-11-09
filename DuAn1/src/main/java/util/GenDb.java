@@ -175,5 +175,7 @@ public class GenDb {
         hdct2.setIdHoaDon(hoaDon1);
         hdct2.setSoLuong(1);
         hdct2.setDonGia(BigDecimal.valueOf(200000));
+        
+        trans.commit();
     }
 }
