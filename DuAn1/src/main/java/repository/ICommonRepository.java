@@ -19,6 +19,6 @@ public interface ICommonRepository <T>{
 
     boolean delete(T t);
     
-    T getOne(String key);
+    List<T> searchByKey(String key);
     
 }

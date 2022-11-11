@@ -77,6 +77,7 @@ public class GenDb {
         nhanVien1.setMatKhau("hnt123");
         nhanVien1.setTrangThai(0);
         nhanVien1.setVaiTro(true);
+        session.save(nhanVien1);
 
         NhanVien nhanVien2 = new NhanVien();
         nhanVien2.setHoTenNV("KhanhDo");
@@ -89,6 +90,7 @@ public class GenDb {
         nhanVien2.setMatKhau("dnk123");
         nhanVien2.setTrangThai(1);
         nhanVien2.setVaiTro(false);
+        session.save(nhanVien2);
 
         // Khuyến mãi
         KhuyenMai khuyenMai1 = new KhuyenMai();
@@ -96,12 +98,14 @@ public class GenDb {
         khuyenMai1.setNgayBatDau(Date.valueOf("2022-11-10"));
         khuyenMai1.setNgayKetThuc(Date.valueOf("2022-11-15"));
         khuyenMai1.setPhanTram(10);
+        session.save(khuyenMai1);
 
         KhuyenMai khuyenMai2 = new KhuyenMai();
         khuyenMai2.setMaGiamGia("KM02");
         khuyenMai2.setNgayBatDau(Date.valueOf("2022-11-20"));
         khuyenMai2.setNgayKetThuc(Date.valueOf("2022-11-25"));
         khuyenMai2.setPhanTram(15);
+        session.save(khuyenMai2);
 
         // Đơn hàng
         DonHang donHang1 = new DonHang();
@@ -111,6 +115,7 @@ public class GenDb {
         donHang1.setMaDH("DH01");
         donHang1.setNgayTao(Date.valueOf("2022-11-10"));
         donHang1.setTrangThai(0);
+        session.save(donHang1);
 
         DonHang donHang2 = new DonHang();
         donHang2.setIdBan(ban1);
@@ -119,6 +124,7 @@ public class GenDb {
         donHang2.setMaDH("DH02");
         donHang2.setNgayTao(Date.valueOf("2022-11-11"));
         donHang2.setTrangThai(1);
+        session.save(donHang2);
 
         // Thực đơn
         ThucDon thucDon1 = new ThucDon();
@@ -128,14 +134,16 @@ public class GenDb {
         thucDon1.setHinh("abc");
         thucDon1.setDonGia(BigDecimal.valueOf(200000));
         thucDon1.setTenMon("Thit cho 36 mon");
+        session.save(thucDon1);
 
         ThucDon thucDon2 = new ThucDon();
-        thucDon1.setMaMon("Mon02");
-        thucDon1.setDanhMuc(danhMuc1);
-        thucDon1.setDonViTinh("Goi");
-        thucDon1.setHinh("abc");
-        thucDon1.setDonGia(BigDecimal.valueOf(500000));
-        thucDon1.setTenMon("Thit Dui 36 mon");
+        thucDon2.setMaMon("Mon02");
+        thucDon2.setDanhMuc(danhMuc1);
+        thucDon2.setDonViTinh("Goi");
+        thucDon2.setHinh("abc");
+        thucDon2.setDonGia(BigDecimal.valueOf(500000));
+        thucDon2.setTenMon("Thit Dui 36 mon");
+        session.save(thucDon2);
 
         // Hóa đơn
         HoaDon hoaDon1 = new HoaDon();
@@ -143,12 +151,14 @@ public class GenDb {
         hoaDon1.setMaHd("HD01");
         hoaDon1.setNgayTao(Date.valueOf("2022-11-11"));
         hoaDon1.setTrangThai(0);
+        session.save(hoaDon1);
 
         HoaDon hoaDon2 = new HoaDon();
-        hoaDon1.setIdDonHang(donHang1);
-        hoaDon1.setMaHd("HD02");
-        hoaDon1.setNgayTao(Date.valueOf("2022-11-12"));
-        hoaDon1.setTrangThai(0);
+        hoaDon2.setIdDonHang(donHang1);
+        hoaDon2.setMaHd("HD02");
+        hoaDon2.setNgayTao(Date.valueOf("2022-11-12"));
+        hoaDon2.setTrangThai(0);
+        session.save(hoaDon2);
 
         // Đơn hàng CT
         DonHangChiTiet dhct1 = new DonHangChiTiet();
@@ -156,12 +166,14 @@ public class GenDb {
         dhct1.setIdThucDon(thucDon2);
         dhct1.setSoLuong(5);
         dhct1.setDonGia(BigDecimal.valueOf(500000));
+        session.save(dhct1);
 
         DonHangChiTiet dhct2 = new DonHangChiTiet();
         dhct2.setIdDonHang(donHang1);
         dhct2.setIdThucDon(thucDon1);
         dhct2.setSoLuong(2);
         dhct2.setDonGia(BigDecimal.valueOf(200000));
+        session.save(dhct2);
 
         // Hóa đơn chi tiết
         HoaDonChiTiet hdct1 = new HoaDonChiTiet();
@@ -169,12 +181,14 @@ public class GenDb {
         hdct1.setIdHoaDon(hoaDon2);
         hdct1.setSoLuong(1);
         hdct1.setDonGia(BigDecimal.valueOf(500000));
+        session.save(hdct1);
         
         HoaDonChiTiet hdct2 = new HoaDonChiTiet();
         hdct2.setIdDonHangChiTiet(dhct1);
         hdct2.setIdHoaDon(hoaDon1);
         hdct2.setSoLuong(1);
         hdct2.setDonGia(BigDecimal.valueOf(200000));
+        session.save(dhct2);
         
         trans.commit();
     }

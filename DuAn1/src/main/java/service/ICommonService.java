@@ -14,7 +14,7 @@ public interface ICommonService<T> {
 
     List<T> getLists();
 
-    T getOne(String id);
+    List<T> search(String key);
 
     String addOrUpdate(T t);
     
