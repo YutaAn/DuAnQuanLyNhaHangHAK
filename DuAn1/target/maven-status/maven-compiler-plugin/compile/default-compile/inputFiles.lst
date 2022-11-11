@@ -1,5 +1,25 @@
-D:\FPT- Polytechnic\PRO1041\DuAn1_Nhom1\DuAn1\src\main\java\view\TrangChu.java
-D:\FPT- Polytechnic\PRO1041\DuAn1_Nhom1\DuAn1\src\main\java\util\HibernateUtil.java
-D:\FPT- Polytechnic\PRO1041\DuAn1_Nhom1\DuAn1\src\main\java\entity\DanhMuc.java
-D:\FPT- Polytechnic\PRO1041\DuAn1_Nhom1\DuAn1\src\main\java\util\GenDb.java
-D:\FPT- Polytechnic\PRO1041\DuAn1_Nhom1\DuAn1\src\main\java\view\DangNhap.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\NhanVienJpanel.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\service\ICommonService.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\NewJPanel.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\ThucDonpanel.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\ThongKeJPanel.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\QuenMatKhau.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\util\HibernateUtil.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\DanhMucJdialog.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\entity\HoaDonChiTiet.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\entity\KhachHang.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\util\GenDb.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\BanJPanel.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\entity\DanhMuc.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\entity\ThucDon.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\TrangChu.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\entity\DonHangChiTiet.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\DangNhap.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\KhachHangPanel.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\entity\Ban.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\entity\DonHang.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\entity\KhuyenMai.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\entity\HoaDon.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\entity\NhanVien.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\view\KhuyenMaiJpanel.java
+C:\Users\hieu\Documents\GitHub\DuAnQuanLyNhaHangHAK1\DuAn1\src\main\java\repository\ICommonRepository.java
